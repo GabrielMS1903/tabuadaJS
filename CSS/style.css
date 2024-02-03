@@ -1,0 +1,112 @@
+/*FORMS*/
+
+#container-div > h2 {
+    color: antiquewhite;
+    margin-bottom: 1rem;
+}
+
+#multiplication-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem auto; /*->*/
+    max-width: 300px; /*centralize with the margin ||*/
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    color: #333;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    margin:  0 1rem;
+}
+
+.form-control > label {
+    margin-bottom: 0,6rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.form-control > input {
+    margin-bottom: 1rem;
+    flex: 1;
+    padding: 0.6rem 0.4rem;
+    width: 50px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#container-div input[type = "submit"] {
+    max-height: 50px;
+    padding: 0.6rem 1.2rem; /*to fill in the button*/
+    width: 200px;
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/*TABLE*/
+
+#multiplication-operation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: 1rem auto;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    color: #333;
+    border-radius: 1rem;
+}
+
+#multiplication-operation > .row {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-bottom: none; /*Cause the border will stay multiplicated */
+    padding: 0.5rem;
+    width: 150px;
+
+}
+
+#multiplication-operation > .row:last-child { /*Selected the last selector */
+    border-bottom: 1px solid #ccc;
+}
+
+#multiplication-operation > .result {
+    margin-left: 0.4rem ;
+
+}
+
+
+@media (max-width: 450px) {
+    .form-control {
+        display: flex;
+       flex-direction: column;
+        align-items: center;
+        width: 110px;
+        margin:  0 1rem;
+    }
+    
+    #container-div input[type = "submit"] {
+        max-height: 70px;
+        padding: 0.8rem 1.2rem; /*to fill in the button*/
+        width: 200px;
+        color: #fff;
+        background-color: gray;
+        border: 1px solid gray;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+}
